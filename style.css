@@ -1,0 +1,128 @@
+*{
+      padding: 0;
+      margin: 0;
+}
+body{
+      background: rgb(95, 207, 227);
+}
+.container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+}
+.card{
+      background: #f1f3f5;
+      margin-top: 20px;
+      height: 500px;
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0,0,0,0.16);
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+}
+.display{
+      background: #f1f3f5;
+      height: 35%;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #fff;
+      display: flex;
+      justify-content: space-between;
+
+}
+.display input{
+      width: 90%;
+      height: 95%;
+      text-align: end;
+      border: none;
+      background-color: transparent;
+      font-size: 30px;
+      outline: none;
+}
+.button{
+      height: 75%;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+}
+.buttonLeft{
+      width: 70%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+      align-items: center;
+}
+.buttonRight{
+      width: 30%;
+      background-color: rgb(156, 142, 169);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      border-radius: 15px;
+      box-shadow: inset 5px 5px 12px rgb(0,0,0,0.16), 5px 5px 12px #fff;
+
+}
+.tombol{
+      border-radius: 50px;
+      border: none;
+      height: 55px;
+      width: 55px;
+      cursor: pointer;
+      background: #f1f3f5;
+      color: tomato;
+      box-shadow: inset 2px 3px 11px #fff, 5px 5px 12px rgb(0,0,0,0.16);
+
+}
+.tombol:hover{
+      transform: scale(0.9);
+}
+.Mode{
+      margin-right: 20px;
+}
+.Mode input[type="checkbox"]{
+      margin-top: 10px;
+      width: 60px;
+      height: 30px;
+      border-radius: 30px;
+      position: relative;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-color: black;
+      transition: .5s ease-in;
+}
+.Mode input[type="checkbox"]:checked{
+      background-color: blue;
+}
+.Mode input[type="checkbox"]::before{
+      content: '';
+      width: 20px;
+      height: 22px;
+      position: absolute;
+      transition: .5s ease;
+      background-color: blanchedalmond;
+      border-radius: 100%;
+      top: 4px;
+      left: 3px;
+}
+.Mode input[type="checkbox"]:checked::before{
+      transform: translateX(35px);
+}
+
+ .dark{
+      background: #000;
+      color: white;
+ }
